@@ -1,0 +1,36 @@
+/* Creating the toggle switch */
+.toggle-label {
+    position : relative ;
+    display : inline-block;
+    cursor: pointer;
+    width: 75px;
+    height: 37.5px;
+    background: hsl(236, 72%, 83%); 
+    border-radius: 100px;
+    position: relative;
+    transition: background-color .2s;
+    margin: 0 1rem;
+    padding-top: 1rem;
+  }
+  .toggle-label::after {
+    content: '';
+    position: absolute;
+    top: 3.5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 45px;
+    transition: 0.8s;
+    background: white;
+    box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+  }
+  .checkbox:checked + .toggle-label::after {
+    right: calc(100% - 5px);
+    transform: translateX(100%); 
+  }
+  .toggle-label:hover  {
+    background: linear-gradient(to bottom right, hsl(236, 72%, 79%) 35%, hsl(237, 63%, 64%)); 
+  }
+  .checkbox {
+    display: none;
+  }

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Setting Variables */
+
+:root {
+    /* Font */
+    --ft-Inter: 'Inter', sans-serif;
+    --fw-bold: 700;
+    --fw-norm: 400;
+    --fs-cdheading: .875rem;
+
+    /* Primary Colors */
+    --lime-gr: hsl(163, 72%, 41%);
+    --bright-rd: hsl(356, 69%, 56%);
+    --fbook-bl: hsl(208, 92%, 53%);
+    --twitter-bl: hsl(203, 89%, 53%);
+    --ig-yw: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --yt-rd: hsl(348, 97%, 39%);
+
+    /* Light Theme - background is white */
+
+    --vpale-blue-topbgpat: hsl(225, 100%, 98%);
+    --ltg-blue-cdbg: hsl(227, 47%, 96%);
+    --dkg-blue-txt: hsl(228, 12%, 44%);
+    --vd-blue-txt: hsl(230, 17%, 14%);
+
+    /* Dark Theme */
+    --vdk-blue-bg: hsl(230, 17%, 14%);
+    --vdk-blue-bgpat: hsl(232, 19%, 15%);
+    --dk-des-blue-cdbg: hsl(228, 28%, 20%);
+    --des-blue: hsl(228, 34%, 66%);
+    --white: hsl(0, 0%, 100%);
+    
+    /* Toggle Themes */
+    --dk-toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+    --lt-toggle: hsl(230, 22%, 74%);
+
+
+}
