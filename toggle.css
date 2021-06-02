@@ -3,9 +3,9 @@
     position : relative ;
     display : inline-block;
     cursor: pointer;
-    width: 75px;
-    height: 37.5px;
-    background: hsl(236, 72%, 83%); 
+    width: 65px;
+    height: 30px;
+    background: hsl(230, 22%, 74%); 
     border-radius: 100px;
     position: relative;
     transition: background-color .2s;
@@ -17,8 +17,8 @@
     position: absolute;
     top: 3.5px;
     right: 5px;
-    width: 30px;
-    height: 30px;
+    width: 23px;
+    height: 23px;
     border-radius: 45px;
     transition: 0.8s;
     background: white;
@@ -29,7 +29,7 @@
     transform: translateX(100%); 
   }
   .toggle-label:hover  {
-    background: linear-gradient(to bottom right, hsl(236, 72%, 79%) 35%, hsl(237, 63%, 64%)); 
+    background: linear-gradient(to top right, hsl(210, 78%, 56%) 2%,  hsl(146, 68%, 55%)); 
   }
   .checkbox {
     display: none;
