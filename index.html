@@ -15,9 +15,9 @@
 
 <body>
   <div class="container">
-    <div class="header">
+    <div class="header" id="main-header">
       <div class="title">
-        <h2 class="social top">Social Media Dashboard</h2>
+        <h1 class="social top">Social Media Dashboard</h1>
         <p class="subtitle">Total Followers: 23,004</p>
       </div>
 
@@ -25,164 +25,146 @@
         <label class="toggler-now toggler--is-active" id="darkmode">Dark Mode</label>
         <div class="toggle-now">
           <input type="checkbox" id="toggle" class="checkbox" />
-          <label for="toggle" id="t-label" class="toggle-label"></label> 
+          <label onclick="toggleTheme()" for="toggle" id="t-label" class="toggle-label"></label> 
         </div>
       </div>
     </div>
 
-    <div class="cards main-cards">
-      <div class="cards card f-book">
-        <h3><img src="images/icon-facebook.svg" alt="facbook-icon"/><span>  @nathanf</span></h3>
-        <p class="number">1987</p>
-        <p class="followers">Followers</p>
-        <p class="change"><img src="./images/icon-up.svg" alt="arrow-up"/>  12 Today</p>
-      </div> 
-      <div class="cards card twit">
-        <h3><img src="images/icon-twitter.svg" alt="twitter-icon"/><span>  @nathanf</span></h3>
-        <p class="number">1044</p>
-        <p class="followers">Followers</p>
-        <p class="change"><img src="images/icon-up.svg" alt="arrow-up"/>  99 Today</p>
-      </div>  
-      <div class="cards card i-gram">
-        <h3><img src="images/icon-instagram.svg" alt="instagram-icon"/><span>  @realnathanf</span></h3>
-        <p class="number">11K</p>
-        <p class="followers">Followers</p>
-        <p class="change"><img src="./images/icon-up.svg" alt="arrow-up"/>  1099 Today</p>
-      </div>  
-      <div class="cards card y-tube">
-        <h3><img src="images/icon-youtube.svg" alt="youtube-icon"/><span>  Nathan F.</span></h3>
-        <p class="number">8239</p>
-        <p class="followers">Followers</p>
-        <p class="change"><img src="./images/icon-down.svg" alt="arrow-down"/> </i>  144 Today</p>
-      </div>  
-    </div>
-    
-    <div>
-      <h2 class="social social-bottom">Overview - Today</h2>
-    </div>
-    
-    <div class="cards overview-cards">
-      <div class="cards overview-top">
-        <div class="card bota">
-          <div class=" ">
-            <h3 class="left">Page Views</h3>
-          </div>
-          <div class=" ">
-            <p class="left">87</p>
-          </div>
-          <div class=" ">
-            <img src="images/icon-facebook.svg" alt="facbook-icon"/>
-          </div>
-          <div class=" ">
-            <p class="change green"><img src="./images/icon-up.svg" alt="arrow-up"/>  3%</p>
-          </div>
+    <div class="grid">
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards" id="big-facebook">
+            <h3><img src="images/icon-facebook.svg" alt="facbook-icon"/><span class="username">  @nathanf</span></h3>
+            <p class="number">1987</p>
+            <p class="followers">FOLLOWERS</p>
+            <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  12 Today</p>
+          </div> 
         </div>
-
-        <div class="card botb">
-          <div class=" ">
-            <h3 class="left">Likes</h3>
-          </div>
-          <div class=" ">
-            <p class="left">52</p>
-          </div>
-          <div class=" ">
-            <img src="images/icon-facebook.svg" alt="facbook-icon"></img>
-          </div>
-          <div class=" ">
-            <p class="change red"><img src="./images/icon-down.svg" alt="arrow-down"/>  2%</p>
-          </div>
-        </div>
-
-        <div class="card botc">
-          <div class=" ">
-            <h3 class="left">Likes</h3>
-          </div>
-          <div class=" ">
-            <p class="left">5462</p>
-          </div>
-          <div class=" ">
-            <img src="images/icon-instagram.svg" alt="instagram-icon"/>
-          </div>
-          <div class=" ">
-            <p class="change green"><img src="./images/icon-up.svg" alt="arrow-up"/>  2257%</p>
-          </div>
-        </div>
+      </div>
       
-        <div class="card botd">
-          <div class=" ">
-            <h3 class="left">Profile Views</h3>
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards" id="big-twitter">
+            <h3><img src="images/icon-twitter.svg" alt="twitter-icon"/><span class="username">  @nathanf</span></h3>
+            <p class="number">1044</p>
+            <p class="followers">FOLLOWERS</p>
+            <p class="gain"><img class="arrow" src="images/icon-up.svg" alt="arrow-up"/>  99 Today</p> 
+          </div> 
+        </div> 
+      </div>  
+     
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards" id="big-instagram">
+            <h3><img src="images/icon-instagram.svg" alt="instagram-icon"/><span class="username">  @realnathanf</span></h3>
+            <p class="number">11K</p>
+            <p class="followers">FOLLOWERS</p>
+            <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  1099 Today</p>
           </div>
-          <div class=" ">
-            <p class="left">52k</p>
-          </div>
-          <div class=" ">
-            <img src="images/icon-instagram.svg" alt="instagram-icon"/>
-          </div>
-          <div class=" ">
-            <p class="change green"><img src="./images/icon-up.svg" alt="arrow-up"/>  1375%</p>
+        </div> 
+      </div>    
+
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards" id="big-ytube">
+            <h3><img src="images/icon-youtube.svg" alt="youtube-icon"/><span class="username"> Nathan F.</span></h3>
+            <p class="number">8239</p>
+            <p class="followers">SUBSCRIBERS</p>
+            <p class="loss"><img class="arrow" src="./images/icon-down.svg" alt="arrow-down"/> </i>  144 Today</p>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+    <div id="ov-today">
+      <h2 class="social bottom">Overview - Today</h2>
+    </div>
+    
+    <div class="grid">
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards cards-small" id="small-one-facebook">
+            <p class="small-text">Page Views</p>
+            <h3 class="b-number">87</h3>
+            <img src="images/icon-facebook.svg" alt="facbook-icon"/>
+            <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  3%</p>
           </div>
         </div>
       </div>
 
-      <div class="cards overview-bottom">
-        <div class="card bote">
-          <div class=" ">
-            <h3 class="left">Retweets</h3>
-          </div>
-          <div class=" ">
-            <p class="left">117</p>
-          </div>
-          <div class=" ">
-            <img src="images/icon-twitter.svg" alt="twitter-icon"/>
-          </div>
-          <div class=" ">
-            <p class="change green"><img src="./images/icon-up.svg" alt="arrow-up"/>  303%</p>
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards cards-small" id="small-two-facebook">
+            <p class="small-text">Likes</p>
+            <h3 class="b-number">52</h3>
+            <img src="images/icon-facebook.svg" alt="facbook-icon"></img>
+            <p class="loss"><img class="arrow" src="./images/icon-down.svg" alt="arrow-down"/>  2%</p>
           </div>
         </div>
+      </div>
 
-        
-        <div class="card botf">
-          <div class=" ">
-            <h3 class="left">Likes</h3>
-          </div>
-          <div class=" ">
-            <p class="left">507</p>
-          </div>
-          <div class=" ">
-            <img src="images/icon-twitter.svg" alt="twitter-icon"/>
-          </div>
-          <div class=" ">
-            <p class="change green"><img src="./images/icon-up.svg" alt="arrow-up"/>  553%</p>
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards cards-small" id="small-one-ig">      
+            <p class="small-text">Likes</p>
+            <h3 class="b-number">5462</h3>
+            <img src="images/icon-instagram.svg" alt="instagram-icon"/>
+            <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  2257%</p>
           </div>
         </div>
-        
-        <div class="card botg">
-          <div class=" ">
-            <h3 class="left">Likes</h3>
-          </div>
-          <div class=" ">
-            <p class="left">107</p>
-          </div>
-          <div class=" ">
-            <img src="images/icon-youtube.svg" alt="youtube-icon"/>
-          </div>
-          <div class=" ">
-            <p class="change red"><img src="./images/icon-down.svg" alt="arrow-down"/>  19%</p>
-          </div>
-        </div>
+      </div>
 
-        <div class="card both">
-          <div class=" ">
-            <h3 class="left">Total Views</h3>
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards cards-small" id="small-two-ig">  
+            <p class="small-text">Profile Views</p>
+            <h3 class="b-number">52k</h3>
+            <img src="images/icon-instagram.svg" alt="instagram-icon"/>
+            <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  1375%</p>
           </div>
-          <div class=" ">
-            <p class="left">1407</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards cards-small" id="small-one-twitter">  
+            <p class="small-text">Retweets</p>
+            <h3 class="b-number">117</h3>
+            <img src="images/icon-twitter.svg" alt="twitter-icon"/>
+            <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  303%</p>
           </div>
-          <div class=" ">
+        </div>
+      </div>
+        
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards cards-small" id="small-two-twitter">  
+            <p class="small-text">Likes</p>
+            <h3 class="b-number">507</h3>
+            <img src="images/icon-twitter.svg" alt="twitter-icon"/>
+            <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  553%</p>
+          </div>
+        </div>
+      </div>  
+
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards cards-small" id="small-one-yt">  
+            <p class="small-text">Likes</p>
+            <h3 class="b-number">107</h3>
             <img src="images/icon-youtube.svg" alt="youtube-icon"/>
+            <p class="loss"><img class="arrow" src="./images/icon-down.svg" alt="arrow-down"/>  19%</p>
           </div>
-          <div class=" ">
-            <p class="change red"><img src="./images/icon-down.svg" alt="arrow-down"/>  12%</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards cards-small" id="small-two-yt"> 
+          <p class="small-text">Total Views</p>
+          <h3 class="b-number">1407</h3>
+          <img src="images/icon-youtube.svg" alt="youtube-icon"/>
+          <p class="loss"><img class="arrow" src="./images/icon-down.svg" alt="arrow-down"/>  12%</p>
           </div>
         </div>
       </div>

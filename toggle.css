@@ -1,11 +1,12 @@
+@import url("styles.css");
 /* Creating the toggle switch */
 .toggle-label {
     position : relative ;
     display : inline-block;
     cursor: pointer;
-    width: 65px;
-    height: 30px;
-    background: hsl(230, 22%, 74%); 
+    width: 50px;
+    height: 25px;
+    background: var(--switch); 
     border-radius: 100px;
     position: relative;
     transition: background-color .2s;
@@ -15,17 +16,17 @@
   .toggle-label::after {
     content: '';
     position: absolute;
-    top: 3.5px;
-    right: 5px;
-    width: 23px;
-    height: 23px;
+    top: 3px;
+    right: 3px;
+    width: 19px;
+    height: 19px;
     border-radius: 45px;
     transition: 0.8s;
-    background: white;
+    background: var(--dot);
     box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
   }
   .checkbox:checked + .toggle-label::after {
-    right: calc(100% - 5px);
+    right: calc(100% - 3px);
     transform: translateX(100%); 
   }
   .toggle-label:hover  {

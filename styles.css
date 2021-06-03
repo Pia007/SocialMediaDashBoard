@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-/* Setting Variables */
+/* Setting Global Variables */
 
 :root {
     /* Font */
@@ -8,34 +8,40 @@
     --fw-bold: 700;
     --fw-norm: 400;
     --fs-cdheading: .875rem;
+    --fs-norm: .9375rem;
 
     /* Primary Colors */
     --lime-gr: hsl(163, 72%, 41%);
     --bright-rd: hsl(356, 69%, 56%);
     --fbook-bl: hsl(208, 92%, 53%);
     --twitter-bl: hsl(203, 89%, 53%);
-    --ig-yw: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --ig-yw: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     --yt-rd: hsl(348, 97%, 39%);
 
-    /* Light Theme - background is white */
-
-    --vpale-blue-topbgpat: hsl(225, 100%, 98%);
-    --ltg-blue-cdbg: hsl(227, 47%, 96%);
-    --dkg-blue-txt: hsl(228, 12%, 44%);
-    --vd-blue-txt: hsl(230, 17%, 14%);
-
-    /* Dark Theme */
-    --vdk-blue-bg: hsl(230, 17%, 14%);
-    --vdk-blue-bgpat: hsl(232, 19%, 15%);
-    --dk-des-blue-cdbg: hsl(228, 28%, 20%);
-    --des-blue: hsl(228, 34%, 66%);
-    --white: hsl(0, 0%, 100%);
-    
-    /* Toggle Themes */
-    --dk-toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
-    --lt-toggle: hsl(230, 22%, 74%);
-
     --bradius: .5rem;
+}
+
+/* Setting Themes*/
+
+body[theme="light"] {
+    --bg: hsl(0, 0%, 100%);
+    --top-bgpat: hsl(225, 100%, 98%);
+    --cdbg: hsla(227, 47%, 96%, .7);
+    --col-hover:hsla(227, 47%, 96%);
+    --small-text-color: hsl(228, 12%, 44%);
+    --other-text-color: hsl(230, 17%, 14%);
+    --switch: hsl(230, 22%, 74%);
+    --dot: hsl(0, 0%, 100%);
+}
+body[theme="dark"] {
+    --bg: hsl(230, 17%, 14%);
+    --top-bgpat: hsl(232, 19%, 15%);
+    --cdbg: hsl(228, 28%, 20%);
+    --col-hover:hsla(228, 55%, 15%, .7);
+    --small-text-color: hsl(228, 34%, 66%);
+    --other-text-color: hsl(0, 0%, 100%);
+    --switch: linear-gradient(to top right, hsl(210, 78%, 56%) 2%,  hsl(146, 68%, 55%));
+    --dot: hsl(228, 28%, 20%);
 }
 
 /* Global Styling */
@@ -52,32 +58,27 @@ body {
     height: 100%;
     font-family: var(--ft-Inter);
     font-weight: var(--fw-bold);
-    font-sizw: var(--fs-cdheading);
+    font-size: var(--fs-cdheading);
 }
+
+/* Default/Light theme styling */
 body {
-    color: var(--vd-blue-txt);
-    background:  var(--vpale-blue-topbgpat);
+    color: var(--other-text-color);
+    font-weight: var(--fw-bold);
+    background:  var(--bg);
     transition: background-color 0.3s;
     align-items: center;
     justify-content: center;
     text-align: center;
     position: relative;
 }
-.container {
-    position: fixed;
-    height: 100%;
-    width: 65rem;
-    margin: 3rem auto;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);  
-}
 .header {
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex: 1 1;
     justify-content: space-between;
-    margin: 0;
+    margin-bottom: 2rem;
 }
 .title {
     display: flex;
@@ -93,6 +94,10 @@ body {
 .social-bottom {
     text-align: left;
 }
+.subtitle {
+    color: var(--small-text-color);
+
+}
 .mode {
     display: flex;
     flex-direction: row;
@@ -102,29 +107,118 @@ body {
 .toggler-now {
     display: inline-block;
     vertical-align: middle;
+    text-align: right;
     /* padding-top: 1rem; */
 }
 #darkmode {
-    padding-top:.25rem;
-    color: var(--dkg-blue-txt);
+    padding-top:.5rem;
+    color: var(--small-text-color);
 }
-.card {
-    background: var(--ltg-blue-cdbg);
-    width: auto;
-    gap: 1rem 1rem;
+.container {
+    max-width: 72rem;
+    margin: auto;
+    padding-top: 1.5rem;
 }
-.main-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.grid {
+    display: grid;
+    /* display: inline-block;
+    width: 100%; */
+    grid-template-columns: repeat(4, 4fr);
+    grid-column-gap: 1.5rem;
+    column-gap: 1.75rem;
+    row-gap:1.75rem;
 }
-.overview-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.col {
+    width: 100%;
+    float: left;
+    /* column-grid-gap: 1rem; */
 }
-.overview-bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.cards-container {
+    gap: 1rem;
+    /* padding: 0 2rem 2rem 0; */
+    
 }
+#big-facebook,
+#big-twitter,
+#big-instagram,
+#big-ytube {
+    border-radius: var(--bradius);
+}
+#big-facebook {
+    border-top: 5px solid var(--fbook-bl);
+}
+#big-twitter {
+    border-top: 5px solid var(--twitter-bl);
+}
+
+#big-instagram {
+    position: relative;
+    overflow: hidden;
+}
+#big-instagram::after {
+    content: '';
+    background-image: var(--ig-yw);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6px;
+    width: 100%;
+}
+
+#big-ytube {
+    border-top: 5px solid var(--yt-rd);
+}
+.cards {
+    background: var(--cdbg);
+    border-radius: var(--bradius);
+    padding: 1rem 2rem;
+}
+#bid-instagram{
+    padding: 1.5rem 2rem;
+}
+.cards:hover {
+    background: var(--col-hover);
+}
+h3 {
+    text-align: center;   
+}
+h3 img {
+    vertical-align: middle;
+    padding-right: .4rem;
+}
+.username {
+    font-size: var(--fs-cdheading);
+    color: var(--small-text-color);
+}
+
+.number {
+    font-size: 3.25rem;
+    margin: 1rem 1rem 0 1rem;
+}
+.followers {
+    font-size: .9rem;
+    font-weight: var(--fw-norm);
+    color: var(--small-text-color);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    letter-spacing: 3px;  
+}
+.arrow {
+    vertical-align: middle;
+}
+.loss {
+    color: var(--bright-rd);
+}
+.gain {
+    color: var(--lime-gr);
+}
+#ov-today {
+    margin: 2.75rem 0 1.25rem 0;
+    text-align: left;
+    font-size:1rem;
+}
+.small-text {
+    color: var(--small-text-color);
+}
+
+
