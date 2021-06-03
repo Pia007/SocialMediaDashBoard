@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <meta name="author" content="Pia Torain">
-  <meta name="description" content="Social Media Dashboard with a toggle that alters the theme.">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet"  href="styles.css">
-  <link rel="stylesheet"  href="toggle.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <meta name="author" content="Pia Torain" />
+  <meta name="description" content="Social Media Dashboard with a toggle that alters the theme." />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet"  href="styles.css" />
+  <link rel="stylesheet" href="toggle.css"/>
   <title>Frontend Mentor | Pia Torain</title>
   <script src="https://kit.fontawesome.com/9794dd2b19.js" crossorigin="anonymous"></script>
 </head>
@@ -84,10 +84,14 @@
       <div class="col">
         <div class="cards-container">
           <div class="cards cards-small" id="small-one-facebook">
-            <p class="small-text">Page Views</p>
-            <h3 class="b-number">87</h3>
-            <img src="images/icon-facebook.svg" alt="facbook-icon"/>
-            <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  3%</p>
+            <div class="top-row">
+              <p class="small-text">Page Views</p>
+              <img class="icon" src="images/icon-facebook.svg" alt="facbook-icon"/>
+            </div>
+            <div class="bottom-row">
+              <h3 class="b-number">87</h3>
+              <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  3%</p>
+            </div>
           </div>
         </div>
       </div>
@@ -95,65 +99,89 @@
       <div class="col">
         <div class="cards-container">
           <div class="cards cards-small" id="small-two-facebook">
-            <p class="small-text">Likes</p>
-            <h3 class="b-number">52</h3>
-            <img src="images/icon-facebook.svg" alt="facbook-icon"></img>
-            <p class="loss"><img class="arrow" src="./images/icon-down.svg" alt="arrow-down"/>  2%</p>
+            <div class="top-row">
+              <p class="small-text">Likes</p>
+              <img class="icon" src="images/icon-facebook.svg" alt="facbook-icon"></img>
+            </div>
+            <div class="bottom-row">
+              <h3 class="b-number">52</h3>
+              <p class="loss"><img class="arrow" src="./images/icon-down.svg" alt="arrow-down"/>  2%</p>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="col">
         <div class="cards-container">
-          <div class="cards cards-small" id="small-one-ig">      
-            <p class="small-text">Likes</p>
-            <h3 class="b-number">5462</h3>
-            <img src="images/icon-instagram.svg" alt="instagram-icon"/>
-            <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  2257%</p>
+          <div class="cards cards-small" id="small-one-ig"> 
+            <div class="top-row">   
+              <p class="small-text">Likes</p>
+              <img class="icon" src="images/icon-instagram.svg" alt="instagram-icon"/>
+            </div>  
+            <div class="bottom-row"> 
+              <h3 class="b-number">5462</h3>
+              <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  2257%</p>
+            </div>
+          </div>  
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards cards-small" id="small-two-ig"> 
+            <div class="top-row">  
+              <p class="small-text">Profile Views</p>
+              <img class="icon" src="images/icon-instagram.svg" alt="instagram-icon"/>
+            </div>
+            <div class="bottom-row">
+              <h3 class="b-number">52k</h3>
+              <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  1375%</p>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="col">
         <div class="cards-container">
-          <div class="cards cards-small" id="small-two-ig">  
-            <p class="small-text">Profile Views</p>
-            <h3 class="b-number">52k</h3>
-            <img src="images/icon-instagram.svg" alt="instagram-icon"/>
-            <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  1375%</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="cards-container">
-          <div class="cards cards-small" id="small-one-twitter">  
-            <p class="small-text">Retweets</p>
-            <h3 class="b-number">117</h3>
-            <img src="images/icon-twitter.svg" alt="twitter-icon"/>
-            <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  303%</p>
+          <div class="cards cards-small" id="small-one-twitter"> 
+            <div class="top-row">  
+              <p class="small-text">Retweets</p>
+              <img class="icon" src="images/icon-twitter.svg" alt="twitter-icon"/>
+            </div>
+            <div class="bottom-row">
+              <h3 class="b-number">117</h3>
+              <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  303%</p>
+            </div>
           </div>
         </div>
       </div>
         
       <div class="col">
         <div class="cards-container">
-          <div class="cards cards-small" id="small-two-twitter">  
-            <p class="small-text">Likes</p>
-            <h3 class="b-number">507</h3>
-            <img src="images/icon-twitter.svg" alt="twitter-icon"/>
-            <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  553%</p>
+          <div class="cards cards-small" id="small-two-twitter"> 
+            <div class="top-row">  
+              <p class="small-text">Likes</p>
+              <img class="icon" src="images/icon-twitter.svg" alt="twitter-icon"/>
+            </div>
+            <div class="bottom-row">
+              <h3 class="b-number">507</h3>
+              <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  553%</p>
+            </div>
           </div>
         </div>
       </div>  
 
       <div class="col">
         <div class="cards-container">
-          <div class="cards cards-small" id="small-one-yt">  
-            <p class="small-text">Likes</p>
-            <h3 class="b-number">107</h3>
-            <img src="images/icon-youtube.svg" alt="youtube-icon"/>
-            <p class="loss"><img class="arrow" src="./images/icon-down.svg" alt="arrow-down"/>  19%</p>
+          <div class="cards cards-small" id="small-one-yt"> 
+            <div class="top-row">  
+              <p class="small-text">Likes</p>
+              <img class="icon" src="images/icon-youtube.svg" alt="youtube-icon"/>
+            </div>
+            <div class="bottom-row">
+              <h3 class="b-number">107</h3>
+              <p class="loss"><img class="arrow" src="./images/icon-down.svg" alt="arrow-down"/>  19%</p>
+            </div>
           </div>
         </div>
       </div>
@@ -161,23 +189,24 @@
       <div class="col">
         <div class="cards-container">
           <div class="cards cards-small" id="small-two-yt"> 
-          <p class="small-text">Total Views</p>
-          <h3 class="b-number">1407</h3>
-          <img src="images/icon-youtube.svg" alt="youtube-icon"/>
-          <p class="loss"><img class="arrow" src="./images/icon-down.svg" alt="arrow-down"/>  12%</p>
-          </div>
+            <div class="top-row">  
+              <p class="small-text">Total Views</p>
+              <img class="icon" src="images/icon-youtube.svg" alt="youtube-icon"/>
+            </div>
+            <div class="bottom-row">
+              <h3 class="b-number">1407</h3>
+              <p class="loss"><img class="arrow" src="./images/icon-down.svg" alt="arrow-down"/>  12%</p>
+            </div>
+         </div>
         </div>
       </div>
     </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Pia Torain</a>, a <a href="https://www.reskillamericans.org" target="_blank" rel="noreferrer">Reskill Americans</a> participant.
+    </div>
   </div>
   
-  <!-- <footer>
-    <p class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/Pia007" target="_blank" rel="noreferrer">Pia Torain</a>, a <a href="https://www.reskillamericans.org" target="_blank" rel="noreferrer">Reskill Americans</a> participant. 
-    </p>
-  </footer> -->
-
   <script src="index.js"></script>
 </body>
 </html>

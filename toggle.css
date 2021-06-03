@@ -1,4 +1,4 @@
-@import url("styles.css");
+
 /* Creating the toggle switch */
 .toggle-label {
     position : relative ;
@@ -8,6 +8,7 @@
     height: 25px;
     background: var(--switch); 
     border-radius: 100px;
+    cursor: pointer;
     position: relative;
     transition: background-color .2s;
     margin: 0 1rem;
