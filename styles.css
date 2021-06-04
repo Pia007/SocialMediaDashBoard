@@ -22,7 +22,8 @@
     --ig-yw: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     --yt-rd: hsl(348, 97%, 39%);
 
-    --bradius: .30rem;
+    --bradius: .37rem;
+    --t-bradius: 1rem;
 }
 
 /* Setting Themes*/
@@ -45,9 +46,9 @@ body[theme="dark"] {
     --col-hover:hsla(226, 24.3%, 43.5%, 0.6);
     --small-text-color: hsl(228, 34%, 66%);
     --other-text-color: hsl(0, 0%, 100%);
-    --switch: linear-gradient(to top right, hsl(210, 78%, 56%) 2%,  hsl(146, 68%, 55%));
+    --switch: linear-gradient(to top right, hsl(210, 78%, 50%) 14%,  hsl(146, 68%, 55%));
     --dot: hsl(228, 28%, 20%);
-    --att: hsl(228, 34%, 66%);
+    --att: hsla(283, 55%, 60%, 0.801);
 }
 
 /* Global Styling */
@@ -62,6 +63,7 @@ html {
 html,
 body {
     height: 100%;
+    /* width: 100%; */
     font-family: var(--ft-Inter);
     font-weight: var(--fw-bold);
     font-size: var(--fs-cdheading);
@@ -73,18 +75,52 @@ body {
     font-weight: var(--fw-bold);
     background:  var(--bg);
     transition: background-color 0.3s;
+    /* display: flex; */
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: relative;
+    /* position: relative; */
+}
+
+.container {
+    max-width: 68rem;
+    left: 0;
+	right: 0;
+	/* top: 10%; */
+	margin-left: auto;
+ 	margin-right: auto;
+    margin: 1rem auto;
+    padding-top: 1.5rem;
+    top: 0;
+    position: absolute;
+    /* z-index: 9; */
+}
+.top-background {
+    background: var(--top-bgpat);
+    max-width: auto;
+    height: 210px;
+    opacity: 0.7;
+    border-radius: 0 0 var(--t-bradius) var(--t-bradius);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 3.65fr);
+    grid-column-gap: 1.5rem;
+    column-gap: 1.75rem;
+    row-gap:1.75rem;
+}
+.col {
+    width: 100%;
+    float: left;
 }
 .header {
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: row;
     flex: 1 1;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 .title {
     display: flex;
@@ -118,22 +154,8 @@ body {
     padding-top:.5rem;
     color: var(--small-text-color);
 }
-.container {
-    max-width: 68rem;
-    margin: auto;
-    padding-top: 1.5rem;
-}
-.grid {
-    display: grid;
-    grid-template-columns: repeat(4, 3.65fr);
-    grid-column-gap: 1.5rem;
-    column-gap: 1.75rem;
-    row-gap:1.75rem;
-}
-.col {
-    width: 100%;
-    float: left;
-}
+
+
 .cards-container {
     gap: 1rem;    
 }
@@ -179,6 +201,7 @@ body {
 .cards:hover {
     cursor: pointer;
     background: var(--col-hover);
+    transform: translateY(12px);
 }
 h3 {
     text-align: center;   
@@ -269,8 +292,4 @@ h3 img {
 .attribution a { 
     color: var(--att); 
 }
-
-
-
-
 
