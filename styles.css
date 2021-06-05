@@ -302,7 +302,7 @@ h3 img {
     color: var(--att); 
 }
 
-@media only screen and (min-width: 880px)and (max-width: 999px) {
+@media only screen and (min-width: 55em)and (max-width: 62.4375em) {
     .container {
         max-width: 62rem;
     }
@@ -313,7 +313,7 @@ h3 img {
         grid-template-columns: repeat(4, 3.5fr);
     }
 }
-@media only screen and (min-width: 827px)and (max-width: 889px) {
+@media only screen and (min-width: 51.6875em) and (max-width: 55.5625em) {
     .container {
         max-width: 58rem;
     }
@@ -340,9 +340,9 @@ h3 img {
     }
 }
 
-@media only screen and (max-width: 826px) {
+@media only screen and (max-width: 51.625em) {
     .top-background {
-        min-width: 600px;
+        min-width: 42rem;
     }
     .container {
         width: 42rem;
