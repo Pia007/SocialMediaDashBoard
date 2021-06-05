@@ -14,201 +14,200 @@
 </head>
 
 <body>
-  <main>
-    <div class="top-background"></div>
-    <div class="container">
-      <div class="header" id="main-header">
-        <div class="title">
-          <h1 class="social-top">Social Media Dashboard</h1>
-          <p class="subtitle">Total Followers: 23,004</p>
-        </div>
-
-        <div class="mode">
-          <label class="toggler-now toggler--is-active" id="darkmode">Dark Mode</label>
-          <div class="toggle-now">
-            <input type="checkbox" id="toggle" class="checkbox" />
-            <label onclick="toggleTheme()" for="toggle" id="t-label" class="toggle-label"></label> 
-          </div>
-        </div>
+  <div class="top-background"></div>
+  <div class="container">
+    <div class="header" id="main-header">
+      <div class="title">
+        <h1 class="social-top">Social Media Dashboard</h1>
+        <p class="subtitle">Total Followers: 23,004</p>
       </div>
 
-      <div class="grid">
-        <div class="col">
-          <div class="cards-container">
-            <div class="cards" id="big-facebook">
-              <h3><img src="images/icon-facebook.svg" alt="facbook-icon"/><span class="username">  @nathanf</span></h3>
-              <p class="number">1987</p>
-              <p class="followers">FOLLOWERS</p>
-              <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  12 Today</p>
-            </div> 
-          </div>
+      <div class="mode">
+        <label class="toggler-now toggler--is-active" id="darkmode">Dark Mode</label>
+        <div class="toggle-now">
+          <input type="checkbox" id="toggle" class="checkbox" />
+          <label onclick="toggleTheme()" for="toggle" id="t-label" class="toggle-label"></label> 
         </div>
-        
-        <div class="col">
-          <div class="cards-container">
-            <div class="cards" id="big-twitter">
-              <h3><img src="images/icon-twitter.svg" alt="twitter-icon"/><span class="username">  @nathanf</span></h3>
-              <p class="number">1044</p>
-              <p class="followers">FOLLOWERS</p>
-              <p class="gain"><img class="arrow" src="images/icon-up.svg" alt="arrow-up"/>  99 Today</p> 
-            </div> 
-          </div> 
-        </div>  
-      
-        <div class="col">
-          <div class="cards-container">
-            <div class="cards" id="big-instagram">
-              <h3><img src="images/icon-instagram.svg" alt="instagram-icon"/><span class="username">  @realnathanf</span></h3>
-              <p class="number">11K</p>
-              <p class="followers">FOLLOWERS</p>
-              <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  1099 Today</p>
-            </div>
-          </div> 
-        </div>    
-
-        <div class="col">
-          <div class="cards-container">
-            <div class="cards" id="big-ytube">
-              <h3><img src="images/icon-youtube.svg" alt="youtube-icon"/><span class="username"> Nathan F.</span></h3>
-              <p class="number">8239</p>
-              <p class="followers">SUBSCRIBERS</p>
-              <p class="loss"><img class="arrow" src="./images/icon-down.svg" alt="arrow-down"/> </i>  144 Today</p>
-            </div>  
-          </div>
-        </div>
-      </div>
-
-      <div class="mid-header" id="ov-today">
-        <h2 class="social-bottom">Overview - Today</h2>
-      </div>
-      
-      <div class="grid-2">
-        <div class="col">
-          <div class="cards-container">
-            <div class="cards cards-small" id="small-one-facebook">
-              <div class="top-row">
-                <p class="small-text">Page Views</p>
-                <img class="icon" src="images/icon-facebook.svg" alt="facbook-icon"/>
-              </div>
-              <div class="bottom-row">
-                <h3 class="b-number">87</h3>
-                <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  3%</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="cards-container">
-            <div class="cards cards-small" id="small-two-facebook">
-              <div class="top-row">
-                <p class="small-text">Likes</p>
-                <img class="icon" src="images/icon-facebook.svg" alt="facbook-icon"></img>
-              </div>
-              <div class="bottom-row">
-                <h3 class="b-number">52</h3>
-                <p class="loss"><img class="arrow" src="./images/icon-down.svg" alt="arrow-down"/>  2%</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="cards-container">
-            <div class="cards cards-small" id="small-one-ig"> 
-              <div class="top-row">   
-                <p class="small-text">Likes</p>
-                <img class="icon" src="images/icon-instagram.svg" alt="instagram-icon"/>
-              </div>  
-              <div class="bottom-row"> 
-                <h3 class="b-number">5462</h3>
-                <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  2257%</p>
-              </div>
-            </div>  
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="cards-container">
-            <div class="cards cards-small" id="small-two-ig"> 
-              <div class="top-row">  
-                <p class="small-text">Profile Views</p>
-                <img class="icon" src="images/icon-instagram.svg" alt="instagram-icon"/>
-              </div>
-              <div class="bottom-row">
-                <h3 class="b-number">52k</h3>
-                <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  1375%</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="cards-container">
-            <div class="cards cards-small" id="small-one-twitter"> 
-              <div class="top-row">  
-                <p class="small-text">Retweets</p>
-                <img class="icon" src="images/icon-twitter.svg" alt="twitter-icon"/>
-              </div>
-              <div class="bottom-row">
-                <h3 class="b-number">117</h3>
-                <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  303%</p>
-              </div>
-            </div>
-          </div>
-        </div>
-          
-        <div class="col">
-          <div class="cards-container">
-            <div class="cards cards-small" id="small-two-twitter"> 
-              <div class="top-row">  
-                <p class="small-text">Likes</p>
-                <img class="icon" src="images/icon-twitter.svg" alt="twitter-icon"/>
-              </div>
-              <div class="bottom-row">
-                <h3 class="b-number">507</h3>
-                <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  553%</p>
-              </div>
-            </div>
-          </div>
-        </div>  
-
-        <div class="col">
-          <div class="cards-container">
-            <div class="cards cards-small" id="small-one-yt"> 
-              <div class="top-row">  
-                <p class="small-text">Likes</p>
-                <img class="icon" src="images/icon-youtube.svg" alt="youtube-icon"/>
-              </div>
-              <div class="bottom-row">
-                <h3 class="b-number">107</h3>
-                <p class="loss"><img class="arrow" src="./images/icon-down.svg" alt="arrow-down"/>  19%</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="cards-container">
-            <div class="cards cards-small" id="small-two-yt"> 
-              <div class="top-row">  
-                <p class="small-text">Total Views</p>
-                <img class="icon" src="images/icon-youtube.svg" alt="youtube-icon"/>
-              </div>
-              <div class="bottom-row">
-                <h3 class="b-number">1407</h3>
-                <p class="loss"><img class="arrow" src="./images/icon-down.svg" alt="arrow-down"/>  12%</p>
-              </div>
-          </div>
-          </div>
-        </div>
-      </div>
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Pia Torain</a>, a <a href="https://www.reskillamericans.org" target="_blank" rel="noreferrer">Reskill Americans</a> participant.
       </div>
     </div>
-  </main>
+
+    <div class="grid">
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards" id="big-facebook">
+            <h3><img src="images/icon-facebook.svg" alt="facbook-icon"/><span class="username">  @nathanf</span></h3>
+            <p class="number">1987</p>
+            <p class="followers">FOLLOWERS</p>
+            <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  12 Today</p>
+          </div> 
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards" id="big-twitter">
+            <h3><img src="images/icon-twitter.svg" alt="twitter-icon"/><span class="username">  @nathanf</span></h3>
+            <p class="number">1044</p>
+            <p class="followers">FOLLOWERS</p>
+            <p class="gain"><img class="arrow" src="images/icon-up.svg" alt="arrow-up"/>  99 Today</p> 
+          </div> 
+        </div> 
+      </div>  
+    
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards" id="big-instagram">
+            <h3><img src="images/icon-instagram.svg" alt="instagram-icon"/><span class="username">  @realnathanf</span></h3>
+            <p class="number">11K</p>
+            <p class="followers">FOLLOWERS</p>
+            <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  1099 Today</p>
+          </div>
+        </div> 
+      </div>    
+
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards" id="big-ytube">
+            <h3><img src="images/icon-youtube.svg" alt="youtube-icon"/><span class="username"> Nathan F.</span></h3>
+            <p class="number">8239</p>
+            <p class="followers">SUBSCRIBERS</p>
+            <p class="loss"><img class="arrow" src="./images/icon-down.svg" alt="arrow-down"/> </i>  144 Today</p>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+    <div class="mid-header" id="ov-today">
+      <h2 class="social-bottom">Overview - Today</h2>
+    </div>
+    
+    <div class="grid-2">
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards cards-small" id="small-one-facebook">
+            <div class="top-row">
+              <p class="small-text">Page Views</p>
+              <img class="icon" src="images/icon-facebook.svg" alt="facbook-icon"/>
+            </div>
+            <div class="bottom-row">
+              <h3 class="b-number">87</h3>
+              <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  3%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards cards-small" id="small-two-facebook">
+            <div class="top-row">
+              <p class="small-text">Likes</p>
+              <img class="icon" src="images/icon-facebook.svg" alt="facbook-icon"></img>
+            </div>
+            <div class="bottom-row">
+              <h3 class="b-number">52</h3>
+              <p class="loss"><img class="arrow" src="./images/icon-down.svg" alt="arrow-down"/>  2%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards cards-small" id="small-one-ig"> 
+            <div class="top-row">   
+              <p class="small-text">Likes</p>
+              <img class="icon" src="images/icon-instagram.svg" alt="instagram-icon"/>
+            </div>  
+            <div class="bottom-row"> 
+              <h3 class="b-number">5462</h3>
+              <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  2257%</p>
+            </div>
+          </div>  
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards cards-small" id="small-two-ig"> 
+            <div class="top-row">  
+              <p class="small-text">Profile Views</p>
+              <img class="icon" src="images/icon-instagram.svg" alt="instagram-icon"/>
+            </div>
+            <div class="bottom-row">
+              <h3 class="b-number">52k</h3>
+              <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  1375%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards cards-small" id="small-one-twitter"> 
+            <div class="top-row">  
+              <p class="small-text">Retweets</p>
+              <img class="icon" src="images/icon-twitter.svg" alt="twitter-icon"/>
+            </div>
+            <div class="bottom-row">
+              <h3 class="b-number">117</h3>
+              <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  303%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards cards-small" id="small-two-twitter"> 
+            <div class="top-row">  
+              <p class="small-text">Likes</p>
+              <img class="icon" src="images/icon-twitter.svg" alt="twitter-icon"/>
+            </div>
+            <div class="bottom-row">
+              <h3 class="b-number">507</h3>
+              <p class="gain"><img class="arrow" src="./images/icon-up.svg" alt="arrow-up"/>  553%</p>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards cards-small" id="small-one-yt"> 
+            <div class="top-row">  
+              <p class="small-text">Likes</p>
+              <img class="icon" src="images/icon-youtube.svg" alt="youtube-icon"/>
+            </div>
+            <div class="bottom-row">
+              <h3 class="b-number">107</h3>
+              <p class="loss"><img class="arrow" src="./images/icon-down.svg" alt="arrow-down"/>  19%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="cards-container">
+          <div class="cards cards-small" id="small-two-yt"> 
+            <div class="top-row">  
+              <p class="small-text">Total Views</p>
+              <img class="icon" src="images/icon-youtube.svg" alt="youtube-icon"/>
+            </div>
+            <div class="bottom-row">
+              <h3 class="b-number">1407</h3>
+              <p class="loss"><img class="arrow" src="./images/icon-down.svg" alt="arrow-down"/>  12%</p>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Pia Torain</a>, a <a href="https://www.reskillamericans.org" target="_blank" rel="noreferrer">Reskill Americans</a> participant.
+    </div>
+  </div>
+
   
   <script src="index.js"></script>
 </body>
