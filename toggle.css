@@ -4,8 +4,8 @@
     position : relative ;
     display : inline-block;
     cursor: pointer;
-    width: 50px;
-    height: 25px;
+    width: 53px;
+    height: 23px;
     background: var(--switch); 
     border-radius: 100px;
     cursor: pointer;
@@ -18,12 +18,12 @@
   .toggle-label::after {
     content: '';
     position: absolute;
-    top: 3px;
+    top: 2px;
     right: 3px;
-    width: 19px;
-    height: 19px;
+    width: 18px;
+    height: 18px;
     border-radius: 45px;
-    transition: 0.8s;
+    transition: 0.7s;
     background: var(--dot);
     box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
   }
