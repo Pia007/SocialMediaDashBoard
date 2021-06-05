@@ -12,6 +12,7 @@
     position: relative;
     transition: background-color .2s;
     margin: 0 1rem;
+    margin-right: 0;
     padding-top: 1rem;
   }
   .toggle-label::after {
