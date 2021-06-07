@@ -19,7 +19,7 @@
     content: '';
     position: absolute;
     top: 2px;
-    right: 3px;
+    left: 3px;
     width: 18px;
     height: 18px;
     border-radius: 45px;
@@ -28,8 +28,8 @@
     box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
   }
   .checkbox:checked + .toggle-label::after {
-    right: calc(100% - 3px);
-    transform: translateX(100%); 
+    left: calc(100% - 3px);
+    transform: translateX(-100%); 
   }
   .toggle-label:hover  {
     background: linear-gradient(to top right, hsl(210, 78%, 56%) 2%,  hsl(146, 68%, 55%)); 

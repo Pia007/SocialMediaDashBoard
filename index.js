@@ -1,6 +1,6 @@
 function toggleTheme() {
-    window.theme = typeof window.theme === "string" ? window.theme : "light";
-    let switchToTheme = window.theme === "light" ? "dark" : "light";
+    window.theme = typeof window.theme === "string" ? window.theme : "dark";
+    let switchToTheme = window.theme === "dark" ? "light" : "dark";
     window.theme = switchToTheme;
     document.querySelector("body").setAttribute("theme", switchToTheme);
   }
