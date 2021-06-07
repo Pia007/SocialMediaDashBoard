@@ -196,7 +196,8 @@ body {
     right: 0;
     border-radius: .75rem .75rem 0 0;
 }
-.cards:hover {
+.cards:hover,
+.cards-summary:hover {
     cursor: pointer;
     background: var(--col-hover);
     transform: translateY(12px);
