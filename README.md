@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Pia007/SocialMediaDashBoard)
-- Live Site URL: [Add live site URL here](https://pia007.github.io/SocialMediaDashBoard/)
+- Solution URL: [Github Repository](https://github.com/Pia007/SocialMediaDashBoard)
+- Live Site URL: [Live Site](https://pia007.github.io/SocialMediaDashBoard/)
 
 ## My process
 
