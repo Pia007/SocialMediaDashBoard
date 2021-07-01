@@ -18,6 +18,9 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 
 ## Overview
 
+![SocialMedDash](https://user-images.githubusercontent.com/66088725/124181702-ba2f9080-da6a-11eb-911e-bc8c77c33f93.JPG)
+
+
 ### The challenge
 
 Users should be able to:
