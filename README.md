@@ -6,7 +6,6 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -32,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Pia007/SocialMediaDashBoard)
-- Live Site URL: [Add live site URL here](https://pia007.github.io/SocialMediaDashBoard/)
+- Solution URL: [Github Repository](https://github.com/Pia007/SocialMediaDashBoard)
+- Live Site URL: [Live Site](https://pia007.github.io/SocialMediaDashBoard/)
 
 ## My process
 
@@ -45,8 +44,7 @@ Users should be able to:
 - CSS Grid
 - Vanilla JavaScript
 - Responsive Design
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+
 
 
 ### What I learned

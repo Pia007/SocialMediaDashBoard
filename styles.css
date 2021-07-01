@@ -70,7 +70,6 @@ body {
     font-family: var(--ft-Inter);
     font-weight: var(--fw-bold);
     font-size: var(--fs-cdheading);
-    transition: all .7s;
 }
 
 /* Default/Dark theme styling */
