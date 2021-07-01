@@ -62,9 +62,9 @@ I want to continue to work on CSS Grid Layouts, overall responsiveness and JavaS
 
 ## Author
 
-- Website - [Pia](https://www.linkedin.com/in/pia-torain-dev)
-- Frontend Mentor - [@pia007](https://www.frontendmentor.io/profile/pia007)
-- Twitter - [@FeenixRizn](https://www.twitter.com/FeenixRizn)
+- [LinkedIn](https://www.linkedin.com/in/pia-torain-dev)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/pia007)
+- [Twitter](https://www.twitter.com/FeenixRizn)
 
 
 ## Acknowledgments
